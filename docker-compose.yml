@@ -1,0 +1,21 @@
+version: '3'
+services:
+  chat-app:
+    build:
+      context: . # Use the current directory as the build context
+    ports:
+      - '3000:3000' # Map host port 3000 to container port 3000
+    environment:
+      - PORT=3000 # Set the environment variable for the Node.js app
+    depends_on:
+      - mongo # Make sure the Node.js app starts after the MongoDB container
+
+  mongo:
+    image: mongo:latest # Use the latest MongoDB image from Docker Hub
+    ports:
+      - '27017:27017' # Map host port 27017 to container port 27017
+    volumes:
+      - mongo-data:/data/db # Mount a volume for MongoDB data persistence
+
+volumes:
+  mongo-data: # Define a named volume for MongoDB data persistence
