@@ -49,5 +49,41 @@ Stopping the Server:
 If you want to stop the server, go back to your terminal where the server is running and press:
  -> Ctrl + C
 
+ ---------------------------------------------------------------------------------------------------------------------------------
+Docker steps: - 
+
+Setting up UAB Chatbot:
+
+Navigate to Project Directory:
+
+Open Command Prompt or PowerShell and navigate to your UAB chatbot project directory:
+
+ -> cd path\to\UAB_PROJECT\UAB Project
+
+Docker Compose File:
+
+Ensure that you have a docker-compose.yml file in this directory
+
+Build and Run the Containers:
+
+Execute the following command to build and start your containers:
+
+ -> docker-compose up --build
+
+Once the command completes, you should see logs indicating that the services (chat-app and mongo) are running.
+
+Accessing the Chatbot:
+
+If everything goes as planned, your chatbot should be accessible on:
+
+ -> http://localhost:3000
+Open this link in your web browser to interact with the UAB chatbot.
+
+Stopping the Containers:
+ -> CTRL+C or docker-compose down
+This will stop and remove all the containers defined in the docker-compose.yml file.
+
 Note:
 This project saves chat history in a file called chatHistory.json. Ensure this file is writable by the server for it to function properly.
+
+
