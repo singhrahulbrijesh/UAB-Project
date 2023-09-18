@@ -1,52 +1,32 @@
 # UAB-Project 
 
 Setting Up and Running the UAB Chat Bot
-Prerequisites
 
-Ensure you have Node.js and npm (comes bundled with Node.js) installed on your machine.
+
+Prerequisites:- Ensure you have Node.js and npm (comes bundled with Node.js) installed on your machine.
 
 Step-by-Step Guide
 
-Cloning the Repository:
-
-If you have the project in a git repository, you can clone it using:
-
-bash
-
-Copy code
+Cloning the Repository: If you have the project in a git repository, you can clone it using:
 
 git clone https://github.com/singhrahulbrijesh/UAB-Project.git
 
-Otherwise, if you've provided the files as a ZIP, ensure the new user has unzipped the project into a local directory.
 
 Navigating to Project Directory:
 
-Open your terminal or command prompt and navigate to the project directory:
-
-bash
-
-Copy code
-
-cd path-to-your-project-directory
+ -> Open your terminal or command prompt and navigate to the project directory:  
+        -> cd path-to-your-project-directory
 
 Installing Dependencies:
 
 Before running the server, you need to install the required dependencies. This project appears to use Express, CORS, and File System (fs) modules, among others. To install them, run:
-
-Copy code
-
-npm install
+-> npm install
 
 Starting the Server: Once all the dependencies are installed, you can start the server by running:
 
+ -> node index.js or npm start
 
-Copy code
-
-node index.js
-
-You should see a message in the console indicating the server is running, something like: 
-
-Server is running on port 3000
+You should see a message in the console indicating the server is running, something like:  Server is running on port 3000
 
 Accessing the Chat Bot in a Browser:
 -> Open your favorite web browser and navigate to:
